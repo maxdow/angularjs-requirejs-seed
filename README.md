@@ -1,5 +1,5 @@
-# Angularjs + RequireJs minimal bootstrap
 
-A test for working with angular and requirejs.
+=======
+PostgresMonitorAngular
+======================
 
-It use expressjs with static serve configuration .
