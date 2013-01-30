@@ -1,17 +1,30 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/app.css"/>
+  <link href="./css/bootstrap.css" rel="stylesheet" media="screen">
+  <title>Postgres Manager</title>
+  <link href="./css/style.css" rel="stylesheet" media="screen">
+
 </head>
 <body>
+	<header class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<a id="logo" class="brand pull-left">Postgres Manager</a>
+				<ul class="nav">
+					<li class="active"><a href="./#"><i class="icon-home"></i>Accueil</a></li>
+					<li><a href="#/GestionBases"><i class="icon-tasks"></i>Bases</a></li>
+					<li><a href="#/GestionAgents"><i class="icon-eye-open"></i>Agents</a></li>
+				</ul>
+				<a href="#/admin" class="btn pull-right">Admin</a>
+			</div>
+		</div>
+	</header>
 
+	<div id="main-container" class="container-fluid">
+	</div>
 
-  {{2+4}}
+<script data-main="js/main.js" src="js/lib/require.js"></script>
 
-
-
-  <script data-main="js/main.js" src="js/lib/require.js"></script>
 </body>
 </html>
