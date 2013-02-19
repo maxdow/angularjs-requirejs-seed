@@ -1,29 +1,29 @@
 define(
 	["angular",
-	"Controllers/controllers"],
+    "Services/services",
+    "Directives/directives",
+    "Controllers/Controllers"
+	],
 
-	function BaseManager(angular){
+	function BaseManager(angular,Services,Directives){
 		var initialize = function () {
 
 		var app = angular.module("myApp", [], function($routeProvider, $locationProvider) {
-		  $routeProvider.when('/', {
-		    templateUrl: '/templates/Accueil.html',
-		    controller: AccueilCtrl
-		  });
-		  $routeProvider.when('/bases', {
-		    templateUrl: '/templates/Accueil.html',
-		    controller: BasesCtrl
-		  });		  
-		  // When you put /home, it also automatically handles /home/ as well
 
+			$routeProvider.when('/', {
+			templateUrl: '/templates/Accueil.html',
+			controller: AccueilCtrl
+			});
 
-		//  $routeProvider.otherwise( { redirectTo: '/login'} );
+		$routeProvider.otherwise( { redirectTo: '/'} );
 
-		  $locationProvider.html5Mode(true);
-		});	
+		$locationProvider.html5Mode(true);
+		});
 
+        app.factory(Services);
+        app.directive(Directives);
+        
 		angular.bootstrap(document,["myApp"]);
-
 
 		};
 	return {

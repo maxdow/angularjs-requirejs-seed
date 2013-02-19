@@ -5,13 +5,6 @@
 
 function AccueilCtrl($scope) {
 
-	$scope.test = "test2";
-
-}
-
-
-function BasesCtrl($scope) {
-
-	$scope.test = "test-----";
+	$scope.test = "world";
 
 }
