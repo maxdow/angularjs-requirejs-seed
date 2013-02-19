@@ -1,5 +1,4 @@
-
 =======
-PostgresMonitorAngular
+Angularjs + RequireJs Seed 
 ======================
 
