@@ -1,4 +1,4 @@
 =======
-Angularjs + RequireJs Seed 
+Angularjs + RequireJs + Express Seed 
 ======================
 
