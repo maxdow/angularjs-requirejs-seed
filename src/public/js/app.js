@@ -20,16 +20,11 @@ define(
 
           $locationProvider.html5Mode(true);
         });
-        console.log(Filters);
+
+        Filters.initialize(app);
+        
         app.factory(Services);
         app.directive(Directives);
-
-        app.filter(('interpolate'),["version",function(version){
-            return function(text) {
-              return String(text).replace(/\%VERSION\%/mg, version);
-            };
-        }]);
-
         
         angular.bootstrap(document,["myApp"]);
 

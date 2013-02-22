@@ -1,27 +1,16 @@
-/*angular.module('myApp.filters', []).
-  filter('interpolate', ['version', function(version) {
-    return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
-    }
-  }]);
-
-*/
 'use strict';
 
 /* Filters */
 
-define(["angular"],function(angular){
+define([],function() {
 
-var filters = {} ;
+    function initialize(app) {
+    app.filter(('interpolate'),["version",function(version){
+        return function(text) {
+          return String(text).replace(/\%VERSION\%/mg, version);
+        };
+    }]);
+    }
 
-filters.interpolate = function(version) {
-    return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
-    };
-};
-
-return filters ;
-
+    return {initialize : initialize};
 });
-
-

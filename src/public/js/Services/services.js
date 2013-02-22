@@ -12,5 +12,3 @@ services.version = function() {
 return services ;
 
 });
-
-;
