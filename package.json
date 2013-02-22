@@ -1,0 +1,20 @@
+{
+  "name": "angularjs-requirejs-seed",
+  "version": "0.1.0",
+  "description": "Application skeleton for an angular app with express server.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxdow/angularjs-requirejs-seed.git"
+  },
+  "keywords": [
+    "angularjs",
+    "seed",
+    "express"
+  ],
+  "author": "Maxime Warnier",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies":{
+    "express":"latest"
+  }
+}
