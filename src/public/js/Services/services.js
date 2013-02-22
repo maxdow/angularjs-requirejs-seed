@@ -5,11 +5,12 @@
 define(["angular"],function(angular){
 
 var services = {} ;
-
-/*services.ex = function() {
-};*/
+services.version = function() {
+  return "0.1" ;
+};
 
 return services ;
 
 });
 
+;
