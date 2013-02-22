@@ -1,32 +1,32 @@
 define(
-	["angular",
+    ["angular",
     "Services/services",
     "Directives/directives",
     "Controllers/Controllers"
-	],
+    ],
 
-	function BaseManager(angular,Services,Directives){
-		var initialize = function () {
+    function BaseManager(angular,Services,Directives){
+        var initialize = function () {
 
-		var app = angular.module("myApp", [], function($routeProvider, $locationProvider) {
+        var app = angular.module("myApp", [], function($routeProvider, $locationProvider) {
 
-			$routeProvider.when('/', {
-			templateUrl: '/templates/Accueil.html',
-			controller: AccueilCtrl
-			});
+            $routeProvider.when('/main', {
+                templateUrl: '/templates/Main.html',
+                controller: MainCtrl
+            });
 
-		$routeProvider.otherwise( { redirectTo: '/'} );
+          $routeProvider.otherwise( { redirectTo: '/main'} );
 
-		$locationProvider.html5Mode(true);
-		});
+          $locationProvider.html5Mode(true);
+        });
 
         app.factory(Services);
         app.directive(Directives);
         
-		angular.bootstrap(document,["myApp"]);
+        angular.bootstrap(document,["myApp"]);
 
-		};
-	return {
-		initialize : initialize
-	};
+        };
+    return {
+        initialize : initialize
+    };
 });

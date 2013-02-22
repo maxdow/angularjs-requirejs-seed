@@ -1,10 +1,7 @@
 /* Controllers */
 
-//http://jacobmumm.com/2012/09/11/single-page-apps-with-node-and-angular/
+function MainCtrl($scope) {
 
-
-function AccueilCtrl($scope) {
-
-	$scope.test = "world";
+	$scope.world = "World";
 
 }
