@@ -22,10 +22,10 @@ define(
         });
 
         Filters.initialize(app);
-        
+
         app.factory(Services);
         app.directive(Directives);
-        
+
         angular.bootstrap(document,["myApp"]);
 
         };
