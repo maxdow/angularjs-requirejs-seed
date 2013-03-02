@@ -16,9 +16,5 @@
   "readmeFilename": "README.md",
   "dependencies":{
     "express":"latest"
-  },
-  "devDependencies":{
-    "chai":"*",
-    "mocha":"*"
   }
 }
