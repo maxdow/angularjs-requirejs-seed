@@ -2,7 +2,7 @@
 
 /* Services */
 
-define(["angular"],function(angular){
+define([],function(){
 
 var services = {} ;
 services.version = function() {

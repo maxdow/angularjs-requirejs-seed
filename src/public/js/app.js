@@ -16,9 +16,9 @@ define(
                 controller: MainCtrl
             });
 
-          $routeProvider.otherwise( { redirectTo: '/'} );
+            $routeProvider.otherwise( { redirectTo: '/'} );
 
-          $locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
         });
 
         Filters.initialize(app);

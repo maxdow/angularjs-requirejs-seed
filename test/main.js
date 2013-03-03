@@ -9,7 +9,6 @@ Object.keys(window.__testacular__.files).forEach(function(file) {
 
 // Remove main.js from the list
 allTestFiles.shift();
-console.log(allTestFiles);
 
 require.config({
   // Testacular serves files from '/base'
@@ -25,9 +24,8 @@ require.config({
         }
     },
 
-  
   // ask requirejs to load these files (all our tests)
   deps: allTestFiles,
   callback :  window.__testacular__.start
-  
+
 });
