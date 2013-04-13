@@ -4,7 +4,7 @@ var express = require('express'),
 
 app.configure(function(){
 
-  app.use(express.static(__dirname + '/app'));
+  app.use(express.static(__dirname + './../app'));
 
 });
 
