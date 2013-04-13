@@ -11,11 +11,11 @@ files = [
   REQUIRE,
   REQUIRE_ADAPTER,
 
-  'src/public/js/lib/angular/angular.js',
+  'app/js/lib/angular/angular.js',
   'test/main.js',
 
   {pattern: 'test/lib/angular/angular-mocks.js', included: false},
-  {pattern: 'src/public/js/**/*.js', included: false},
+  {pattern: 'app/js/**/*.js', included: false},
   {pattern: 'test/unit/*.test.js', included: false},
   {pattern: 'test/test.test.js', included: false}
 ];
