@@ -3,7 +3,7 @@ define(
     "Services/services",
     "Directives/directives",
     "Filters/filters",
-    "Controllers/Controllers"
+    "Controllers/controllers"
     ],
 
     function BaseManager(angular,Services,Directives,Filters){
